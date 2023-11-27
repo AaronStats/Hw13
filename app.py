@@ -24,10 +24,10 @@ credential = DefaultAzureCredential()
 client = SecretClient(vault_url=AZURE_KEY_VAULT_URL, credential=credential)
 
 _dbhostname = client.get_secret("HW13-DBHOSTNAME")
-_dbusername = client.get_secret("HW13-DBUSERNAME")
-_dbpassword = client.get_secret("HW13-DBPASSWORD")
+_dbusername = client.get_secret("dbusername")
+_dbpassword = client.get_secret("dbpassword)
 _dbname = client.get_secret("HW13-DBNAME")
-_secret = client.get_secret("HW13-SECRET-KEY")
+_secret = client.get_secret("secret-key")
 
 conn = pymysql.connect(
     host=_dbhostname.value,
