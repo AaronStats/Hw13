@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'astatler-hw13'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_656A6B74022B482495DD27748F0EC749 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F973D7B684C64269BBF3AE628F7FAAA8 }}
